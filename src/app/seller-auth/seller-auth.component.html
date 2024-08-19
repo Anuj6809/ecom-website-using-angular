@@ -1,0 +1,39 @@
+<div class="seller-auth">
+    <div class="signup" *ngIf="!showlogin">
+        <h1 class="common-heading">Seller Sign-up</h1>
+        <form class="common-form" [formGroup]="signInForm" (ngSubmit)="signInUpdate(this.signInForm.value)">
+            <p class="loginError">{{authError}}</p>
+            <input class="common-input" type="text"  placeholder="Enter your name" formControlName="name">
+            <div *ngIf="name.invalid && name.touched">
+                <small class="error">Name is required and must be at least 3 characters.</small>
+              </div>
+            <input class="common-input"  type="text" placeholder="Enter your email" formControlName="email">
+            <div *ngIf="email.invalid && email.touched">
+                <small class="error">Enter valid email</small>
+            </div>
+            <input class="common-input"  type="text"  placeholder="Enter your password" formControlName="password">
+            <div *ngIf="password.invalid && password.touched">
+                <small class="error">Password is required and must be at least 6 characters.</small>
+              </div>
+            <button class="common-button" type="submit" >Sign In</button>
+            <a class="show" (click)="showLogin()">Already have a account? click to login</a>
+        </form>
+    </div>
+    <!-- login area -->
+    <div class="login" *ngIf="showlogin">
+        <h1 class="common-heading">Seller login</h1>
+        <form class="common-form" [formGroup]="logInForm" (ngSubmit)="logInUpdate(this.logInForm.value)">
+            <p class="loginError">{{authError}}</p>
+            <input class="common-input"  type="text" placeholder="Enter your email" formControlName="email">
+            <div *ngIf="email.invalid && email.touched">
+                <small class="error">Enter valid email</small>
+            </div>
+            <input class="common-input"  type="text"  placeholder="Enter your password" formControlName="password">
+            <div *ngIf="password.invalid && password.touched">
+                <small class="error">Password is required and must be at least 6 characters.</small>
+              </div>
+            <button class="common-button" type="submit" >Log In</button>
+            <a class="show" (click)="showsignin()">Don't have a account? click to sign-up</a>
+        </form>
+    </div>
+</div>

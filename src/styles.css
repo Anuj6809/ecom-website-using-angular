@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.common-form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 30%;
+}
+
+.common-input{
+    margin-top: 1.5rem;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: large;
+    border: 1px solid rgb(6, 59, 92);
+    border-radius: 10px;
+}
+
+.common-heading{
+    text-align: center;
+    margin-top:4rem ;
+    color: rgb(6, 59, 92);
+}
+
+.common-button{
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(6, 59, 92);
+    color: white;
+    font-weight: bold;
+}

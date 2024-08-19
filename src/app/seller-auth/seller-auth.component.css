@@ -1,0 +1,29 @@
+/* .container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.common-form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+} */
+
+.error{
+    color: red;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.show{
+    color: rgb(6, 59, 92);
+    cursor: pointer;
+    margin-top:1.5rem;
+    text-align: center;
+}
+
+.loginError{
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(6, 59, 92);
+    color: white;
+}
+.nav h1{
+    margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+.nav h1 a{
+  color: white;
+  text-decoration: none;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav ul li{
+    padding: 0 1rem;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav div input {
+    padding: 1rem 0.6rem;
+    width: 15rem;
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+    outline: none;
+    border: none;
+}
+.nav div button {
+    padding: 1rem 0.6rem;
+    width: 4rem;
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
+    border: none;
+}
