@@ -22,6 +22,15 @@ export class CartPageComponent {
 
   }
 ngOnInit():void{
+  this.loadDetails()
+}
+
+removeToCart(cartId:number | undefined){
+cartId && this.cart.removeToCart(cartId).subscribe((result)=>{
+ this.loadDetails()
+})
+}
+loadDetails(){
   this.cart.currentCart().subscribe((result)=>{
     this.cartData=result 
     let price=0
@@ -36,7 +45,11 @@ ngOnInit():void{
     this.priceSummary.tax=price/10;
     this.priceSummary.delivery=100
     this.priceSummary.total=price+(price/10)+100-(price/10)
+    if(!this.cartData.length){
+      this.router.navigate([""])
+    }
   })
+
 }
 
 checkout(){

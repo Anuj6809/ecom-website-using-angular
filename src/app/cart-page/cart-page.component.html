@@ -10,7 +10,7 @@
                     <li>Product Name:{{cart.name}}</li>
                     <li>Product Price:{{cart.price}}</li>
                     <li>Quantity:{{cart.quantity}}</li>
-                    <li><button>Remove</button></li>
+                    <li><button (click)="removeToCart(cart.id)">Remove</button></li>
                    </ul>
                 </div>
                </div>

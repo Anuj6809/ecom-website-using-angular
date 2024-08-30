@@ -19,6 +19,7 @@
         <ul *ngSwitchCase="'user'">
             <li><a routerLink="">Home</a></li>
             <li><a>{{userName | titlecase}}</a></li>
+            <li><a routerLink="my-order">MyOrder</a></li>
             <li (click)="userLogout()"><a>Logout</a></li>
             <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
         </ul>
