@@ -1,0 +1,20 @@
+<div  *ngIf="!message">
+    <div class="row search-item" *ngFor="let items of searchResult">
+        <hr>
+        <div class="col-sm-3 image">
+            <a routerLink="/product-details/{{items.id}}"><img src={{items.image}} alt=""></a>
+            
+        </div>
+        <div class="col-sm-8 details">
+          <h3><a routerLink="/product-details/{{items.id}}">{{items.name}}</a></h3>
+          <p><b>Rs.{{items.price}}</b></p>
+          <p class="span"><span>Color:{{items.color}}</span><span>Category:{{items.category}}</span></p>
+          <p class="description">{{items.description}}</p>
+        </div>
+    </div>
+    
+</div>
+<div *ngIf="message">
+    <p>No records found</p>
+ </div>
+

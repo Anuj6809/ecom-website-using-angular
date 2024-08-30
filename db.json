@@ -36,5 +36,317 @@
       "email": "adjijd@sds",
       "password": "djfsakd"
     }
+  ],
+  "products": [
+    {
+      "name": "i phone 14",
+      "price": "150000",
+      "color": "red",
+      "description": "apple mobiles",
+      "category": "mobiles",
+      "image": "https://m.xcite.com/media/catalog/product//i/p/iphone_14_5g_-_blue_1_1_1.jpg",
+      "id": "2747"
+    },
+    {
+      "name": "laptop 11",
+      "price": "15000",
+      "color": "black",
+      "description": "shsjdh",
+      "category": "laptop",
+      "image": "https://betanews.com/wp-content/uploads/2014/11/front-scaled.jpg",
+      "id": "1113"
+    },
+    {
+      "id": "5ebd",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000"
+    },
+    {
+      "id": "f3ae",
+      "name": "Apple Watch",
+      "price": "30000",
+      "color": "white",
+      "description": "The Apple Watch is a feature-rich smartwatch that combines fitness tracking, health monitoring, and seamless iPhone integration.",
+      "category": "watch",
+      "image": "https://www.rogers.com/apple-images/watch/40mm-white-angle.png"
+    },
+    {
+      "id": "30fd",
+      "name": "Samsung LED TV",
+      "price": "45000",
+      "color": "Black",
+      "description": "samsung tv",
+      "category": "TV",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6202/6202102_sd.jpg"
+    },
+    {
+      "id": "83ff",
+      "name": "Canon DSLR",
+      "price": "75000",
+      "color": "Skyblue",
+      "description": "A high-resolution digital camera with advanced autofocus, optical zoom, and image stabilization, perfect for capturing stunning photos and videos in any setting",
+      "category": "Camera",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.cBeOP5k7b1RC0QF4aaQ21QHaHa&pid=Api&P=0&h=220"
+    }
+  ],
+  "users": [
+    {
+      "id": "0b99",
+      "name": "Anuj",
+      "email": "anujyadav9309@gmail.com",
+      "password": "Anuj@123"
+    }
+  ],
+  "cart": [
+    {
+      "id": "5ed0",
+      "name": "i phone 14",
+      "price": "150000",
+      "color": "red",
+      "description": "apple mobiles",
+      "category": "mobiles",
+      "image": "https://m.xcite.com/media/catalog/product//i/p/iphone_14_5g_-_blue_1_1_1.jpg",
+      "quantity": 4,
+      "productId": "2747",
+      "userId": "d84c"
+    },
+    {
+      "id": "101b",
+      "name": "laptop 11",
+      "price": "15000",
+      "color": "black",
+      "description": "shsjdh",
+      "category": "laptop",
+      "image": "https://betanews.com/wp-content/uploads/2014/11/front-scaled.jpg",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "1113"
+    },
+    {
+      "id": "60d1",
+      "name": "laptop 11",
+      "price": "15000",
+      "color": "black",
+      "description": "shsjdh",
+      "category": "laptop",
+      "image": "https://betanews.com/wp-content/uploads/2014/11/front-scaled.jpg",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "1113"
+    },
+    {
+      "id": "4ba0",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 5,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "b0e8",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "a1af",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "8607",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "a2bf",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "aca9",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "16e4",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "9e39",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "5ebd"
+    },
+    {
+      "id": "1f65",
+      "name": "Samsung LED TV",
+      "price": "45000",
+      "color": "Black",
+      "description": "samsung tv",
+      "category": "TV",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6202/6202102_sd.jpg",
+      "quantity": 3,
+      "userId": "d84c",
+      "productId": "30fd"
+    },
+    {
+      "id": "419a",
+      "name": "i phone 14",
+      "price": "150000",
+      "color": "red",
+      "description": "apple mobiles",
+      "category": "mobiles",
+      "image": "https://m.xcite.com/media/catalog/product//i/p/iphone_14_5g_-_blue_1_1_1.jpg",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "2747"
+    },
+    {
+      "id": "c6b8",
+      "name": "Canon DSLR",
+      "price": "75000",
+      "color": "Skyblue",
+      "description": "A high-resolution digital camera with advanced autofocus, optical zoom, and image stabilization, perfect for capturing stunning photos and videos in any setting",
+      "category": "Camera",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.cBeOP5k7b1RC0QF4aaQ21QHaHa&pid=Api&P=0&h=220",
+      "quantity": 1,
+      "userId": "d84c",
+      "productId": "83ff"
+    },
+    {
+      "id": "28a0",
+      "name": "i phone 14",
+      "price": "150000",
+      "color": "red",
+      "description": "apple mobiles",
+      "category": "mobiles",
+      "image": "https://m.xcite.com/media/catalog/product//i/p/iphone_14_5g_-_blue_1_1_1.jpg",
+      "quantity": 1,
+      "userId": "fff4",
+      "productId": "2747"
+    },
+    {
+      "id": "5f25",
+      "name": "Google pixel 7",
+      "price": "35000",
+      "color": "white",
+      "description": "The Google Pixel 7 is a smartphone that offers exceptional camera capabilities, a sleek design, smooth performance, and integrated AI features for an enhanced Android experience.",
+      "category": "Mobile",
+      "image": "https://content.presspage.com/uploads/633/f560a24d-88da-446a-9746-31ac89eb5d9e/1920_gp-ln-23-007-pixel7a-6-48-master-full-uk-blue-240323.png?10000",
+      "quantity": 1,
+      "userId": "fff4",
+      "productId": "5ebd"
+    },
+    {
+      "id": "e586",
+      "name": "Apple Watch",
+      "price": "30000",
+      "color": "white",
+      "description": "The Apple Watch is a feature-rich smartwatch that combines fitness tracking, health monitoring, and seamless iPhone integration.",
+      "category": "watch",
+      "image": "https://www.rogers.com/apple-images/watch/40mm-white-angle.png",
+      "quantity": 4,
+      "userId": "fff4",
+      "productId": "f3ae"
+    }
+  ],
+  "orders": [
+    {
+      "id": "339d",
+      "email": "anujyadav9309@gmail.com",
+      "address": "karad",
+      "contact": "12345568",
+      "totalPrice": 165100,
+      "userId": "fff4"
+    },
+    {
+      "id": "a2e0",
+      "email": "anujyadav9309@gmail.com",
+      "address": "asS",
+      "contact": "12345",
+      "totalPrice": 185100,
+      "userId": "fff4"
+    },
+    {
+      "id": "7066",
+      "email": "anujyadav9309@gmail.com",
+      "address": "karad",
+      "contact": "123",
+      "totalPrice": 305100,
+      "userId": "fff4"
+    },
+    {
+      "id": "42b2",
+      "email": "anujyadav9309@gmail.com",
+      "address": "sabdshjhds",
+      "contact": "213156",
+      "totalPrice": 305100,
+      "userId": "fff4"
+    },
+    {
+      "id": "55c8",
+      "email": "anujyadav9309@gmail.com",
+      "address": "dsasd",
+      "contact": "dsasd",
+      "totalPrice": 35100,
+      "userId": "0b99"
+    }
   ]
 }

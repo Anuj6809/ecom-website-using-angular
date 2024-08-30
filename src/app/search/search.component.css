@@ -1,0 +1,23 @@
+hr{
+    margin: 20px 0px 10px 0px;
+}
+.search-item{
+    display: flex;
+    margin: 15px auto;
+}
+
+.image img{
+    width: 100%;
+}
+
+.details{
+    padding:20px;
+    
+}
+
+div span{
+    margin: 0px 20px 0px 0px;
+}
+.description{
+    color: gray;
+}

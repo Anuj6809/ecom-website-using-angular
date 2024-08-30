@@ -1,0 +1,37 @@
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cart-details{
+   border: 1px solid grey;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.product li{
+    list-style: none;
+}
+
+img{
+    width: 100px;
+}
+
+.summary{
+  padding: 20px;
+  border: 1px solid grey;
+}
+.summary li{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.max-width{
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+
+<div class="add-product" *ngIf="!isShow" >
+    <h1 class="common-heading">Update Product</h1>
+    <p class="message">{{updatedMsg}}</p>
+    <form class='common-form' [formGroup]="productForm" (ngSubmit)=updateProduct(productForm.value) >
+        <input class="common-input" type="text"  placeholder="Enter product name" formControlName="name">
+    
+        <input class="common-input"  type="text" placeholder="Enter product price" formControlName="price">
+       
+        <input class="common-input"  type="text"  placeholder="Enter procuct category" formControlName="category">
+       
+          <input class="common-input" type="text"  placeholder="Enter product color" formControlName="color">
+       
+        <textarea class="common-input" name="" id="" formControlName="description"></textarea>
+       
+        <input class="common-input" type="text" placeholder="Enter image url" formControlName="image">
+        
+        <button  class="common-button" type="submit" >Update Product</button>
+    </form>
+</div>
+<div class="update-card" *ngIf="isShow">
+  <div class="update-card-content">
+    <h2 class="update-card-title">Product Updated Successfully!</h2>
+    <p class="update-card-message">Your product has been updated successfully.</p>
+    <button class="update-card-button" (click)="goToHomePage()">Go to Home Page</button>
+  </div>
+</div>

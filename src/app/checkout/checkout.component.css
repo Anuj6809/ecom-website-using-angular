@@ -1,0 +1,17 @@
+.checkout{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.max-width{
+    width: 80%;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+.order-msg{
+    color: green;
+    text-align: center;
+}

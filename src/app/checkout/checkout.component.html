@@ -1,0 +1,19 @@
+<div class="checkout">
+    <h1 class="common-heading">Checkout</h1>
+    <!-- <p class="order-msg">{{orderMsg}}</p> -->
+    <div class="row">
+        <div class="col-sm-7">
+            <h3 class="common-heading">Add Shipping Address</h3>
+            <form class="common-form max-width" [formGroup]="checkoutForm" (ngSubmit)="checkOut(checkoutForm.value)">
+              <input class="common-input" type="text" formControlName="email" placeholder="Enter user email">
+              <input class="common-input" type="text" formControlName="address" placeholder="Enter user address">
+              <input class="common-input" type="text" formControlName="contact" placeholder="Enter user contact details">
+              <button class="common-button"  type="submit">Order Now</button>
+            </form>
+        </div>
+        <div class="col-sm-5 common-heading">
+            <h3>Total Amount: Rs.{{totalPrice}}</h3>
+            <h4>Payment Method: <b>Cash on delivery</b></h4>
+        </div>
+    </div>
+</div>

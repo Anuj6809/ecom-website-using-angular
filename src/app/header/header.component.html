@@ -1,21 +1,32 @@
-<nav class="nav">
+<nav class="nav"  (document:click)="onClickOutside($event)">
     <h1 ><a routerLink="">E-COMM</a></h1>
-    <div *ngIf="menuType=='default'">
-        <input type="text" placeholder="search the products">
-        <button>Search</button>
+    <div *ngIf="menuType !=='seller'">
+        <input type="text" (keyup)="searchProduct($event)" placeholder="search the products" #searchInput>
+        <button (click)="searchProductPage(searchInput.value)">Search</button>
+        <ul class="suggestedResult" #searchResults>
+            <li *ngFor="let items of searchResult">
+                <a routerLink="/product-details/{{items.id}}">{{items.name}}</a>
+            </li>
+        </ul>
     </div>
     <div [ngSwitch]="menuType">
         <ul *ngSwitchCase="'default'">
             <li><a routerLink="">Home</a></li>
             <li><a routerLink="seller">seller</a></li>
-            <li><a>login</a></li>
-            <li><a >Cart(0)</a></li>
+            <li><a routerLink="/user-auth">Login/SignUp</a></li>
+            <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
+        </ul>
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="">Home</a></li>
+            <li><a>{{userName | titlecase}}</a></li>
+            <li (click)="userLogout()"><a>Logout</a></li>
+            <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
         </ul>
         <ul *ngSwitchCase="'seller'">
             <li><a routerLink="seller-add-product">Add Product</a></li>
             <li><a routerLink="seller-home">Product List</a></li>
             <li><a (click)="logout()">Logout</a></li>
-            <li><a >{{sellerName}}</a></li>
+            <li><a >{{sellerName | titlecase}}</a></li>
         </ul>
     </div>
     

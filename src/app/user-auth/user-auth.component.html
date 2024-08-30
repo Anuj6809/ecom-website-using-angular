@@ -1,0 +1,43 @@
+
+<div class="user-auth" *ngIf="!show">
+    <h1 class="common-heading" >User Sign-Up</h1>
+    <form  class="common-form" [formGroup]="userSignForm" (ngSubmit)="submit(userSignForm.value)">
+        <input type="text" class="common-input" formControlName="name" placeholder="Enter your name">
+        <div *ngIf="name.invalid && name.touched">
+            <small *ngIf="name.errors?.['required']">Name is required.</small>
+            <small *ngIf="name.errors?.['minlength']">Name must be atleast 3 of characters.</small>
+            <small *ngIf="name.errors?.['maxlength']">Name cannot exceed 15 of characters.</small>
+        </div>
+        <input type="text" class="common-input" formControlName="email" placeholder="Enter your email">
+        <div *ngIf="email.invalid && email.touched">
+           <small *ngIf="email.errors?.['required']">Email is required</small>
+           <small *ngIf="email.errors?.['email']">Please enter valid email</small>
+        </div>
+        <input type="text" class="common-input" formControlName="password" placeholder="Enter your password">
+        <div *ngIf="password.invalid && password.touched">
+            <small *ngIf="password.errors?.['required']">Password is required.</small>
+            <small *ngIf="password.errors?.['minlength']">Minimum length of password is 6 characters.</small>
+        </div>
+        <button class="common-button" type="submit">Sign-Up</button>
+        <p>already have account?<a (click)="showSignup()">click here to login</a></p>
+    </form>
+    
+</div>
+<div class="user-auth" *ngIf="show">
+    <h1 class="common-heading" >User Login</h1>
+    <p class="authErrorMsg">{{authErrorMsg}}</p>
+    <form class="common-form" [formGroup]="userLoginForm" >
+        <input type="text" class="common-input" formControlName="email" placeholder="Enter your email">
+        <div *ngIf="loginEmail.invalid && loginEmail.touched">
+            <small *ngIf="loginEmail.errors?.['required']">Email is required</small>
+            <small *ngIf="loginEmail.errors?.['email']">Please enter valid email</small>
+         </div>
+        <input type="text" class="common-input" formControlName="password" placeholder="Enter your password">
+        <div *ngIf="loginPassword.invalid && loginPassword.touched">
+            <small *ngIf="loginPassword.errors?.['required']">Password is required.</small>
+            <small *ngIf="loginPassword.errors?.['minlength']">Minimum length of password is 6 characters.</small>
+        </div>
+        <button class="common-button" (click)="userLogin( userLoginForm.value)" type="submit">Login</button>
+        <p>Don't have a account?<a (click)="showLogin()">click here to SignUp</a></p>
+    </form>
+</div>

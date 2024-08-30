@@ -1,1 +1,41 @@
-<p>seller-add-product works!</p>
+<div class="add-product">
+    <h1 class="common-heading">Add New Product</h1>
+    <p class="message">{{addProductMessage}}</p>
+    <form class='common-form' [formGroup]="productForm" (ngSubmit)="addProductForm(productForm.value)" >
+        <input class="common-input" type="text"  placeholder="Enter product name" formControlName="name">
+        <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">
+           <small *ngIf="productForm.get('name')?.hasError('required')">Name is required.</small>
+           <small *ngIf="productForm.get('name')?.hasError('minLength')">Name must be at least 3 characters.</small>
+           <small *ngIf="productForm.get('name')?.hasError('maxLength')">Name cannot exceed 50 characters.</small>
+           <small></small>
+        </div>
+        <input class="common-input"  type="text" placeholder="Enter product price" formControlName="price">
+        <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+          <small *ngIf="productForm.get('price')?.hasError('required')">Price must be required</small>
+          <small *ngIf="productForm.get('price')?.hasError('pattern')">Price must be a number</small>
+        </div>
+        <input class="common-input"  type="text"  placeholder="Enter procuct category" formControlName="category">
+        <div *ngIf="productForm.get('category')?.invalid && productForm.get('category')?.touched">
+            <small *ngIf="productForm.get('category')?.hasError('required')">Category is required.</small>
+            <small *ngIf="productForm.get('category')?.hasError('minLength')">Category must be at least 3 characters.</small>
+          </div>
+          <input class="common-input" type="text"  placeholder="Enter product color" formControlName="color">
+        <div *ngIf="productForm.get('color')?.invalid && productForm.get('color')?.touched">
+           <small *ngIf="productForm.get('color')?.hasError('required')">color is required.</small>
+           <small *ngIf="productForm.get('color')?.hasError('minLength')">color must be at least 3 characters.</small>
+           <small *ngIf="productForm.get('color')?.hasError('maxLength')">color cannot exceed 50 characters.</small>
+           <small></small>
+        </div>
+        <textarea class="common-input" name="" id="" formControlName="description"></textarea>
+        <div *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched">
+            <small *ngIf="productForm.get('description')?.hasError('required')">Description is required.</small>
+            <small *ngIf="productForm.get('description')?.hasError('minLength')">Description must be at least 10 characters.</small>
+          </div>
+        <input class="common-input" type="text" placeholder="Enter image url" formControlName="image">
+        <div *ngIf="productForm.get('image')?.invalid && productForm.get('image')?.touched">
+            <small *ngIf="productForm.get('image')?.hasError('required')">Image URL is required.</small>
+            <small *ngIf="productForm.get('image')?.hasError('pattern')">Image URL must be a valid URL.</small>
+          </div>
+        <button class="common-button" type="submit" >Add Product</button>
+    </form>
+</div>

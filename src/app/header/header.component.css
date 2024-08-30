@@ -4,6 +4,10 @@
     align-items: center;
     background-color: rgb(6, 59, 92);
     color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 101;
 }
 .nav h1{
     margin-left: 1rem;
@@ -33,7 +37,7 @@
 
 .nav div input {
     padding: 1rem 0.6rem;
-    width: 15rem;
+    width: 20rem;
     border-radius: 0.4rem 0rem 0rem 0.4rem;
     outline: none;
     border: none;
@@ -43,4 +47,20 @@
     width: 4rem;
     border-radius: 0rem 0.4rem 0.4rem 0rem;
     border: none;
+}
+
+.suggestedResult{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: rgb(6, 59, 92);
+    background-color: white;
+    width: 380px;
+    border-radius: 10px;
+    top: 100px;
+    box-shadow: 1px 3px 10px;
+}
+
+ul li a{
+    cursor: pointer;
 }

@@ -1,7 +1,7 @@
+.authErrorMsg{
+    color: red;
+    text-align: center;
+}
 small{
     color: red;
-}
-.message{
-    color:green;
-    text-align: center;
 }

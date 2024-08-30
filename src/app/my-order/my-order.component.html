@@ -1,0 +1,38 @@
+<div class="my-order">
+    <h1 class="myHeading">My Orders</h1>
+    <div class="row order-title">
+        <div class="col-sm-2">            
+          <span>Order</span>
+        </div>
+        <div class="col-sm-2">            
+          <span>Order Id</span>
+        </div>
+        <div class="col-sm-2">            
+          <span>Price</span>
+        </div>
+        <div class="col-sm-2">            
+          <span>Status</span>
+        </div>
+        <div class="col-sm-2">            
+          <span>Action</span>
+        </div>
+    </div>
+    <div class="row order-details" *ngFor="let order of orderList">
+        <div class="col-sm-2">            
+            <span><img class="order-img"  src="https://tse2.mm.bing.net/th?id=OIP.H1AhbxHjUT-G7-_Q68BWFgHaHa&pid=Api&P=0&h=220" alt=""></span>
+          </div>
+          <div class="col-sm-2">            
+            <span>#{{order.id}}</span>
+          </div>
+          <div class="col-sm-2">            
+            <span>Rs.{{order.totalPrice}}</span>
+          </div>
+          <div class="col-sm-2">            
+            <span>In Process</span>
+          </div>
+          <div class="col-sm-2">            
+            <span><button class="common-button" (click)="cancleOrder(order.id)">Cancle Order</button></span>
+          </div>
+    </div>
+
+</div>
